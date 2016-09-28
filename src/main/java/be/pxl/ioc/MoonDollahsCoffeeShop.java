@@ -10,9 +10,9 @@ public class MoonDollahsCoffeeShop {
     private List<Barista> baristas = new ArrayList<>();
 
     MoonDollahsCoffeeShop() {
-        Barista vicky = new Barista("vicky");
-        Barista emma = new Barista("gemma");
-        Barista gianluca = new Barista("gianluca");
+        Barista vicky = new Barista("vicky", new BadHearingWorkEthic());
+        Barista emma = new Barista("gemma", new CustomerFriendlyWorkEthic());
+        Barista gianluca = new Barista("gianluca", new LazyWorkEthic());
 
         baristas = Arrays.asList(vicky, emma, gianluca);
     }
